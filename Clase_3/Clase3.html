@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+</head>
+
+<body>
+    <script>
+        // let i = 0;
+        // do {
+        //     i++
+        //     document.write(`Numero ${i} <br>`);
+        // } while (i<10);
+        // let cadena = prompt("Ingresa una frase: ");
+        //hola como estas
+        // //0123456789
+        // document.write(`Longitud de la cadena ${cadena.length} <br>`);
+        // document.write(`Texto en Mayusculs ${cadena.toUpperCase()} <br>`);
+        // document.write(`Texto en minusculas ${cadena.toLowerCase()} <br>`);
+        // document.write(`Caracter en primer posicion (1) ${cadena.charAt(1)} <br>`);
+
+        // let caracter = prompt("Escriba un caracter a buscar: ");
+        // document.write(`<hr> <br> posicion de la letra: ${cadena.indexOf(caracter)} <br>`)
+        // document.write(`Posicion de la ultima letra: ${cadena.lastIndexOf(caracter)}<br>`)
+        // document.write(cadena.split("s")+"<br>");
+        // document.write(cadena.replace("a", "o")+"<br>");
+        // document.write(cadena.substr(1,6));
+        // let alfa1 = ["A", "B", "C"];
+        // let alfa2 = ["D", "E", "F"];
+        // let grupoA,
+        //     grupoB,
+        //     inverso;
+        // grupoA = alfa1.concat(alfa2);
+        // document.write(grupoA + "<br>");
+
+        // grupoB = grupoA.join("-");
+        // document.write(grupoB + "<br>");
+
+        // grupoA.pop();
+        // document.write(grupoA + "<br>");
+
+        // grupoA.push("G");
+        // document.write(grupoA + "<br>");
+
+        // grupoA.shift();
+        // document.write(grupoA + "<br>");
+
+        // grupoA.unshift("z");
+        // document.write(grupoA + "<br>");
+
+        // inverso=grupoA.reverse();
+        // document.write(inverso + "<br>");
+
+        // grupoA.splice(1,2, 'H');
+        // document.write(grupoA + "<br>");
+        let ejercicio = prompt("Ingrese 1. si quiere hacer el ejercicio uno o 2. si quiere hacer el ejercicio dos: ");
+        switch (ejercicio) {
+            case "1":
+                let cantidad = prompt("Ingrese cantidad de numeros que desea ingresar: ");
+                let i = 0;
+                for (let i = 0; i < cantidad; i++) {
+                    let numeros = prompt("Ingrese un numero: ");
+                    let num = numeros.length;
+                    for (let i = 0; i < num; i++) {
+                        if (numeros != 0) {
+                            document.write(`El numero que usted ingreso es : ${numeros} <br>`);
+                        } else {
+
+                        }
+                    }
+                }
+                break;
+            case "2":
+                let cant = prompt("Ingrese cantidad de datos que desea ingresar: ");
+                let c = 0;
+                    for (let c = 0; c < cant; c++){
+                     let datos = prompt("Ingrese un dato: ");
+                      if(isNaN(datos)) {
+                          var letras = datos;
+                      }else{
+                          var numeros = datos;
+                      }
+                        let pLetra = letras.charAt(0);
+                        var ambos = pLetra.concat(numeros);     
+                }
+                document.write(ambos);
+                break;
+            default:
+                alert("Opcion errada");
+                location.reload();
+                break;
+        }
+    </script>
+</body>
+
+</html>
